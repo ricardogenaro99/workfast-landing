@@ -23,30 +23,151 @@
 	<body>
 		<header>
 			<a class="header_title" href="#inicio">WORKFAST</a>
-			<nav class="menu">
+			<button class="btn-hamburger" id="btn-hamburger">
+				<span class="hamburger-icon" data="hamburger-menu">
+					<b></b>
+					<b></b>
+					<b></b>
+				</span>
+			</button>
+			<nav class="menu" id="menu">
 				<a class="item_menu" href="#nosotros">¿Por qué WorkFast?</a>
-				<a class="item_menu" href="#productos">Productos</a>
-				<a class="item_menu" href="#contactanos">Contactanos</a>
-				<a class="item_menu target_app" href="#">Soy Postulante</a>
+				<a class="item_menu" href="#productos">Te ofrecemos</a>
+				<a
+					class="item_menu target_app"
+					href="https://workfast-frontend.herokuapp.com/"
+					>Soy Postulante</a
+				>
 				<a class="item_menu target_app" href="#">Soy Reclutador</a>
 			</nav>
 		</header>
 		<main>
 			<section id="inicio">
-				<div class="text-container">
-					<h3>Conecta</h3>
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
-						impedit explicabo veniam velit quod aspernatur voluptate nihil quia
-						laboriosam magnam?
-					</p>
+				<svg
+					width="100%"
+					height="100%"
+					id="svg"
+					viewBox="0 0 1440 600"
+					xmlns="http://www.w3.org/2000/svg"
+					class="svg-wave transition duration-300 ease-in-out delay-150"
+				>
+					<defs>
+						<linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%">
+							<stop offset="5%" stop-color="#1672ce"></stop>
+							<stop offset="95%" stop-color="#288ef5"></stop>
+						</linearGradient>
+					</defs>
+					<path
+						d="M 0,600 C 0,600 0,150 0,150 C 65.03333333333333,152.45128205128205 130.06666666666666,154.9025641025641 205,146 C 279.93333333333334,137.0974358974359 364.76666666666665,116.84102564102564 453,111 C 541.2333333333333,105.15897435897436 632.8666666666668,113.73333333333335 719,114 C 805.1333333333332,114.26666666666665 885.7666666666667,106.225641025641 966,107 C 1046.2333333333333,107.774358974359 1126.0666666666668,117.36410256410258 1205,126 C 1283.9333333333332,134.63589743589742 1361.9666666666667,142.3179487179487 1440,150 C 1440,150 1440,600 1440,600 Z"
+						stroke="none"
+						stroke-width="0"
+						fill="url(#gradient)"
+						fill-opacity="0.4"
+						class="transition-all duration-300 ease-in-out delay-150 path-0"
+						transform="rotate(-180 720 300)"
+					></path>
+					<defs>
+						<linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%">
+							<stop offset="5%" stop-color="#1672ce"></stop>
+							<stop offset="95%" stop-color="#288ef5"></stop>
+						</linearGradient>
+					</defs>
+					<path
+						d="M 0,600 C 0,600 0,300 0,300 C 63.92820512820512,325.55897435897435 127.85641025641024,351.1179487179487 198,347 C 268.14358974358976,342.8820512820513 344.50256410256407,309.08717948717947 439,301 C 533.4974358974359,292.91282051282053 646.1333333333334,310.5333333333333 741,315 C 835.8666666666666,319.4666666666667 912.9641025641026,310.7794871794872 996,301 C 1079.0358974358974,291.2205128205128 1168.0102564102565,280.34871794871793 1243,280 C 1317.9897435897435,279.65128205128207 1378.9948717948719,289.82564102564106 1440,300 C 1440,300 1440,600 1440,600 Z"
+						stroke="none"
+						stroke-width="0"
+						fill="url(#gradient)"
+						fill-opacity="0.53"
+						class="transition-all duration-300 ease-in-out delay-150 path-1"
+						transform="rotate(-180 720 300)"
+					></path>
+					<defs>
+						<linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%">
+							<stop offset="5%" stop-color="#1672ce"></stop>
+							<stop offset="95%" stop-color="#288ef5"></stop>
+						</linearGradient>
+					</defs>
+					<path
+						d="M 0,600 C 0,600 0,450 0,450 C 99.82051282051285,470.2307692307692 199.6410256410257,490.46153846153845 273,497 C 346.3589743589743,503.53846153846155 393.25641025641016,496.3846153846154 463,473 C 532.7435897435898,449.6153846153846 625.3333333333334,409.99999999999994 701,398 C 776.6666666666666,386.00000000000006 835.4102564102565,401.6153846153847 924,417 C 1012.5897435897435,432.3846153846153 1131.025641025641,447.53846153846155 1222,453 C 1312.974358974359,458.46153846153845 1376.4871794871794,454.2307692307692 1440,450 C 1440,450 1440,600 1440,600 Z"
+						stroke="none"
+						stroke-width="0"
+						fill="url(#gradient)"
+						fill-opacity="1"
+						class="transition-all duration-300 ease-in-out delay-150 path-2"
+						transform="rotate(-180 720 300)"
+					></path>
+				</svg>
+				<div class="container-two container">
+					<div class="text-container">
+						<h3>Conecta</h3>
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+							impedit explicabo veniam velit quod aspernatur voluptate nihil
+							quia laboriosam magnam?
+						</p>
+					</div>
+					<img
+						src="./assets/undraw_feeling_proud_qne1.svg"
+						alt="feeling_proud"
+					/>
 				</div>
-				<img src="./assets/undraw_feeling_proud_qne1.svg" alt="" />
 			</section>
-			<section id="nosotros"></section>
-			<section id="productos"></section>
-			<section id="contactanos"></section>
+			<section id="nosotros">
+				<div class="container-two container">
+					<img
+						src="./assets/undraw_design_notes_re_eklr.svg"
+						alt="feeling_proud"
+					/>
+					<div class="text-container">
+						<h3>¿Por qué WorkFast?</h3>
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+							impedit explicabo veniam velit quod aspernatur voluptate nihil
+							quia laboriosam magnam?
+						</p>
+					</div>
+				</div>
+			</section>
+			<section id="productos">
+				<div class="container-two container">
+					<div class="text-container">
+						<h3>Productos</h3>
+						<p>
+							Eres <strong>postulante</strong> encuentra tu próximo empleo,
+							guardalo en favoritos y postula. Eres
+							<strong>reclutador</strong> encuentra a tu próximo talento.
+							Contamos con sistemas para el seguimiento de empleos y
+							postulaciones.
+						</p>
+						<p></p>
+					</div>
+					<img src="./assets/undraw_in_sync_re_jlqd.svg" alt="feeling_proud" />
+				</div>
+				<div class="container-two container">
+					<img
+						src="./assets/undraw_credit_card_re_blml.svg"
+						alt="feeling_proud"
+					/>
+					<div class="text-container">
+						<h3>Preparate</h3>
+						<p>
+							Accede a una membresía en la cual podrás acceder a contenido
+							multimedia que te llevara al siguiente nivel y estarás más que
+							preparado para las entrevistas a las que te llamaran.
+						</p>
+						<p></p>
+					</div>
+				</div>
+			</section>
 		</main>
-		<footer></footer>
+		<footer>
+			<span>
+				© 2022 WORKFAST -
+				<a href="https://ricardo-genaro-portfolio.vercel.app/" target="_BLANK"
+					>RICARDO GENARO</a
+				>
+			</span>
+		</footer>
 	</body>
+	<script src="./index.js"></script>
 </html>

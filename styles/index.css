@@ -20,7 +20,7 @@
 	--min-width-aside: 70px;
 	--min-width-aside: 55px;
 	--height-header: 66px;
-	--height-footer: 0px;
+	--height-footer: 60px;
 	--height-main: calc(100vh - var(--height-header) - var(--height-footer));
 
 	--padding-global-x: 6%;
