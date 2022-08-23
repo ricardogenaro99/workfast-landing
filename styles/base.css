@@ -93,3 +93,27 @@ a {
 ::placeholder {
 	opacity: 0.45;
 }
+
+.Overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--color-black-modal);
+	z-index: 99999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+*:not(.not-word-break) {
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word; /* Sólo WebKit -NO DOCUMENTADO */
+
+	-ms-hyphens: auto; /* Guiones para separar en sílabas */
+	-moz-hyphens: auto; /*  depende de lang en <html>      */
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
